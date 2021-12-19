@@ -51,4 +51,26 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  tailwindcss: {
+    config: {
+      theme: {
+        extend: {
+          colors: {
+            'custom-blue': '#05386b',
+            'custom-dark-green': '#379683',
+            'custom-green': '#5cdb95',
+            'custom-light-green': '#8ee4af',
+            'custom-lighter-green': '#edf5e1',
+          }
+        }
+      },
+	  variants: {
+		  extend: {
+			  borderStyle: ['hover', 'active', 'focus'],
+			  borderWidth: ['hover', 'active', 'focus']
+		  }
+	  }
+    }
+  }
 }
