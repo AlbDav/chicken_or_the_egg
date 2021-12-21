@@ -35,9 +35,7 @@
                 py-3
                 bg-custom-green
                 rounded-md
-                border-b-8
-                active:border-b
-                border-custom-dark-green
+				button-shadow
               "
               @click="vote"
             >
