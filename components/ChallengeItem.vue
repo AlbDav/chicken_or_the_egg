@@ -1,10 +1,7 @@
 <template>
   <div class="h-full w-full mx-auto flex flex-col justify-around">
     <kinesis-element :strength="5">
-      <div class="h-5 w-5/6 bg-white mx-auto rounded-md">
-      <div class="h-full w-full rainbow-bg rounded-md relative" :class="`rainbow-bg-${side}`">
-      </div>
-      </div>
+      <LifeBar :percentage="percentage" :side="side" />
     </kinesis-element>
     <kinesis-element
       class="h-1/2 w-5/6 rounded-md bg-white mx-auto"
@@ -27,7 +24,12 @@
 export default {
   props: {
     side: {
-      default: 'left'
+      default: 'left',
+    },
+  },
+  data() {
+    return {
+      percentage: 0,
     }
   },
   methods: {
@@ -36,31 +38,9 @@ export default {
     },
   },
   mounted() {
-    console.log(this.side);
-  }
+    setTimeout(() => {
+      this.percentage = Math.floor(Math.random() * 100) + 1;
+    }, 1000)
+  },
 }
 </script>
-
-<style scoped>
-.rainbow-bg-left {
-  background: linear-gradient(to right, red, orange, yellow, green, blue);
-}
-
-.rainbow-bg-right {
-  background: linear-gradient(to left, red, orange, yellow, green, blue);
-}
-
-.rainbow-bg::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  bottom: 0px;
-  left: 0px;
-  height: 115%;
-  width: 100%;
-  opacity: 0.8;
-  filter: blur(6px);
-  background: inherit;
-  border-radius: inherit;
-}
-</style>
