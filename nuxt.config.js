@@ -12,7 +12,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['@/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['~/plugins/vue-kinesis.js'],
@@ -51,4 +51,20 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  tailwindcss: {
+    config: {
+      theme: {
+        extend: {
+          colors: {
+            'custom-blue': '#05386b',
+            'custom-dark-green': '#379683',
+            'custom-green': '#5cdb95',
+            'custom-light-green': '#8ee4af',
+            'custom-lighter-green': '#edf5e1',
+          }
+        }
+      },
+    }
+  }
 }
