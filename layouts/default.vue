@@ -1,5 +1,13 @@
+
 <template>
-  <div class="h-screen w-screen overflow-hidden bg-custom-blue">
-    <Nuxt />
+  <div>
+    <NavBar />
+	  <Nuxt />
   </div>
 </template>
+
+<script>
+export default {
+	name: 'DefaultLayout'
+}
+</script>
