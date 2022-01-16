@@ -68,5 +68,9 @@ export default {
         }
       },
     }
+  },
+
+  server: {
+	  host: '0'
   }
 }
