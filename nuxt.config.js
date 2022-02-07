@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -51,19 +53,23 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-	  transpile: ['gsap']
+    transpile: ['gsap']
   },
 
   tailwindcss: {
     config: {
       theme: {
         extend: {
+          fontFamily: {
+            sans: ['Chakra Petch', ...defaultTheme.fontFamily.sans],
+          },
           colors: {
             'custom-blue': '#05386b',
             'custom-dark-green': '#379683',
             'custom-green': '#5cdb95',
             'custom-light-green': '#8ee4af',
             'custom-lighter-green': '#edf5e1',
+            'custom-orange': '#FF391E'
           }
         }
       },
@@ -71,6 +77,6 @@ export default {
   },
 
   server: {
-	  host: '0'
+    host: '0'
   }
 }
