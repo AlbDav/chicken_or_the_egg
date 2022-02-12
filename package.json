@@ -1,6 +1,6 @@
 {
   "name": "chicken_or_the_egg",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": true,
   "scripts": {
     "dev": "nuxt",
