@@ -1,15 +1,26 @@
 <template>
-	<nav class="fixed w-full flex justify-between items-center text-white bg-black z-50">
-    <div>
-      Logo
+  <nav
+    class="
+      fixed
+      w-full
+      flex
+      justify-between
+      items-center
+      text-white
+      bg-black
+      z-50
+      shadow-md
+      px-8
+    "
+  >
+    <div class="md:hidden">
+      <font-awesome-icon :icon="['fas', 'bars']" />
     </div>
-    <div class="flex">
-      <a href="#" class="nav-item">About</a>
-      <a href="#" class="nav-item">Traits</a>
-      <a href="#" class="nav-item">RoadMap</a>
-      <a href="#" class="nav-item">Sneak Peeks</a>
-      <a href="#" class="nav-item">FAQ</a>
-      <a href="#" class="nav-item">Team</a>
+    <div>Logo</div>
+    <div class="hidden md:flex">
+      <a href="#" class="nav-item">Home</a>
+      <a href="#" class="nav-item">Current Collection</a>
+      <a href="#" class="nav-item">Comin Soon</a>
     </div>
     <div>
       <button class="px-3 py-1 border-2 border-white rounded-md">
@@ -25,15 +36,18 @@
   @apply py-8;
 }
 
-.nav-item:hover:after {
+.nav-item:after {
   content: '';
   display: block;
   width: 100%;
   height: 5px;
   border-radius: 10px 10px 0 0;
-  background-color: white;
+  background-color: transparent;
   position: relative;
-  bottom: -2rem;
-  z-index: 100;
+  @apply -bottom-8;
+}
+
+.nav-item:hover:after {
+  background-color: white;
 }
 </style>
