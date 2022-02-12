@@ -17,9 +17,9 @@
         w-full
         flex flex-row
         items-center
+        px-8
         md:px-16
-        text-center
-        md:text-left
+        text-left
       "
     >
       <div class="md:w-3/4">
