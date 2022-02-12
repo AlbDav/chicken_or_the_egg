@@ -3,9 +3,9 @@
     ref="whichSide"
     class="h-screen h-screen w-full flex flex-col justify-evenly items-center"
   >
-    <div ref="which" class="text-white text-8xl text-center">Which side</div>
+    <div ref="which" class="text-white text-8xl md:text-9xl text-center">Which side</div>
     <div ref="hr" class="w-10/12 h-1 bg-white rounded-full" />
-    <div ref="side" class="text-white text-8xl text-center">are you on?</div>
+    <div ref="side" class="text-white text-8xl md:text-9xl text-center">are you on?</div>
   </div>
 </template>
 

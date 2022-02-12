@@ -4,12 +4,9 @@
       Logo
     </div>
     <div class="flex">
-      <a href="#" class="nav-item">About</a>
-      <a href="#" class="nav-item">Traits</a>
-      <a href="#" class="nav-item">RoadMap</a>
-      <a href="#" class="nav-item">Sneak Peeks</a>
-      <a href="#" class="nav-item">FAQ</a>
-      <a href="#" class="nav-item">Team</a>
+      <a href="#" class="nav-item">Home</a>
+      <a href="#" class="nav-item">Current Collection</a>
+      <a href="#" class="nav-item">Comin Soon</a>
     </div>
     <div>
       <button class="px-3 py-1 border-2 border-white rounded-md">

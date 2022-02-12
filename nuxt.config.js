@@ -28,6 +28,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+	'@nuxtjs/fontawesome'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -74,6 +75,13 @@ export default {
         }
       },
     }
+  },
+
+  fontawesome: {
+	  icons: {
+		  solid: true,
+		  brands: true
+	  }
   },
 
   server: {
