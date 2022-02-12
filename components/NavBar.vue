@@ -1,9 +1,23 @@
 <template>
-	<nav class="fixed w-full flex justify-between items-center text-white bg-black z-50 shadow-md px-8">
-    <div>
-      Logo
+  <nav
+    class="
+      fixed
+      w-full
+      flex
+      justify-between
+      items-center
+      text-white
+      bg-black
+      z-50
+      shadow-md
+      px-8
+    "
+  >
+    <div class="md:hidden">
+      <font-awesome-icon :icon="['fas', 'bars']" />
     </div>
-    <div class="flex">
+    <div>Logo</div>
+    <div class="hidden md:flex">
       <a href="#" class="nav-item">Home</a>
       <a href="#" class="nav-item">Current Collection</a>
       <a href="#" class="nav-item">Comin Soon</a>
