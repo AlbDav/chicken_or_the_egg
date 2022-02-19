@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 
+//https://greensock.com/forums/topic/26453-prevent-scrolling-horizontal-before-scrolltrigger/
+html {
+	overflow-y: scroll;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+}
+body {
+	background-color: black;
+	overflow-y: visible;
+	position: relative;
+}
+html, body {
+	overflow-x: hidden;
+	margin: 0;
+}
+
 .button-shadow {
 	box-shadow: 0px 10px 0px 0px theme('colors.custom-dark-green');
 	transition: all 0.1s ease-in-out;

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black">
+  <div>
 	<LandingPage />
     <WhichSide />
     <AboutCollections />
