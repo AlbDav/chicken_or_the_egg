@@ -19,7 +19,7 @@
     "
   >
     <div class="md:hidden px-2">
-      <font-awesome-icon :icon="['fas', 'bars']" />
+      <font-awesome-icon :icon="['fas', 'bars']" class="text-base" />
     </div>
     <div class="flex justify-center md:justify-start">Logo</div>
     <div class="hidden md:flex md:justify-center h-full">
