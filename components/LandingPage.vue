@@ -22,7 +22,7 @@
         text-left
       "
     >
-      <div class="md:w-3/4">
+      <div class="sm:w-3/4 h-full w-full flex flex-col justify-evenly sm:justify-center">
         <h1 class="text-white text-6xl md:text-8xl -mt-16 title">
           Are you ready to join the challenge?
         </h1>
