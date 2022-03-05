@@ -1,5 +1,7 @@
 <template>
-  <div ref="about" class="h-screen w-full bg-white">ciao</div>
+  <div ref="about" class="w-full bg-white">
+	  <CallToAction />
+  </div>
 </template>
 
 <script>

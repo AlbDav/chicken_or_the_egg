@@ -45,7 +45,7 @@
         md:px-16
       "
     >
-      <img class="object-cover" src="../static/Saly-11.png" alt="rocket" />
+      <img class="object-cover" src="../static/Saly-1.png" alt="rocket" />
     </div>
   </div>
 </template>
